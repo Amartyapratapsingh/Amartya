@@ -3,30 +3,10 @@
    Interactive JavaScript
    ============================================ */
 
-// --- Page Loader ---
-// Use DOMContentLoaded instead of load, because load waits for iframes
-// which may block or take forever on external sites
-function hideLoader() {
-    const loader = document.getElementById('loader');
-    if (loader && !loader.classList.contains('hidden')) {
-        loader.classList.add('hidden');
-        document.body.style.overflow = 'auto';
-        animateHeroElements();
-    }
-}
-
-// Hide loader once DOM is ready + small delay for fonts
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', () => {
-        setTimeout(hideLoader, 1800);
-    });
-} else {
-    // DOM already loaded (e.g. script loaded late)
-    setTimeout(hideLoader, 1800);
-}
-
-// Fallback: force-hide loader after 4 seconds no matter what
-setTimeout(hideLoader, 4000);
+// --- Page Init ---
+// No loader — animate hero immediately
+document.body.style.overflow = 'auto';
+animateHeroElements();
 
 // --- Custom Cursor ---
 const cursor = document.getElementById('cursor');
