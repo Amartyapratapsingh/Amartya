@@ -3,10 +3,7 @@
    Interactive JavaScript
    ============================================ */
 
-// --- Page Init ---
-// No loader — animate hero immediately
-document.body.style.overflow = 'auto';
-animateHeroElements();
+// --- Page Init (called at end of file) ---
 
 // --- Custom Cursor ---
 const cursor = document.getElementById('cursor');
@@ -379,6 +376,9 @@ if (lazyIframes.length > 0) {
 
 // --- Preload optimization ---
 document.addEventListener('DOMContentLoaded', () => {
-    // Add loaded class for any deferred animations
     document.body.classList.add('dom-loaded');
 });
+
+// --- Init: No loader, animate hero immediately ---
+document.body.style.overflow = 'auto';
+animateHeroElements();
