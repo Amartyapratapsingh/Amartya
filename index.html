@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amartya Pratap Singh | Full-Stack Developer & App Developer</title>
+    <meta name="description" content="Portfolio of Amartya Pratap Singh — Full-Stack Web Developer, Front-End Engineer, Back-End Architect & Mobile App Developer.">
+    <link rel="icon" type="image/png" href="./Public/Images/icons8-briefcase-48.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Loader -->
+    <div class="loader" id="loader">
+        <div class="loader-inner">
+            <div class="loader-line"></div>
+            <span class="loader-text">AMARTYA</span>
+        </div>
+    </div>
+
+    <!-- Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <a href="#hero" class="nav-logo">A<span class="gold">.</span></a>
+        <div class="nav-links" id="navLinks">
+            <a href="#about" class="nav-link" data-index="01">About</a>
+            <a href="#skills" class="nav-link" data-index="02">Skills</a>
+            <a href="#projects" class="nav-link" data-index="03">Projects</a>
+            <a href="#experience" class="nav-link" data-index="04">Experience</a>
+            <a href="#contact" class="nav-link" data-index="05">Contact</a>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-inner">
+            <a href="#about" class="mobile-link" data-index="01">About</a>
+            <a href="#skills" class="mobile-link" data-index="02">Skills</a>
+            <a href="#projects" class="mobile-link" data-index="03">Projects</a>
+            <a href="#experience" class="mobile-link" data-index="04">Experience</a>
+            <a href="#contact" class="mobile-link" data-index="05">Contact</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-grid"></div>
+        <div class="hero-grain"></div>
+        <div class="hero-content">
+            <div class="hero-left">
+                <div class="hero-tag reveal-up">
+                    <span class="tag-line"></span>
+                    <span class="tag-text">Full-Stack Developer & App Developer</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="title-line reveal-up"><span class="title-word">Amartya</span></span>
+                    <span class="title-line reveal-up"><span class="title-word">Pratap</span> <span class="title-word outline">Singh</span></span>
+                </h1>
+                <p class="hero-description reveal-up">
+                    I craft <span class="typed-wrapper"><span class="typed" id="typed"></span><span class="typed-cursor">|</span></span> with precision, performance, and purpose.
+                </p>
+                <div class="hero-actions reveal-up">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View My Work</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                    </a>
+                    <a href="#contact" class="btn btn-ghost">
+                        <span>Let's Talk</span>
+                    </a>
+                </div>
+                <div class="hero-stats reveal-up">
+                    <div class="stat">
+                        <span class="stat-number" data-count="7">0</span><span class="gold">+</span>
+                        <span class="stat-label">GitHub Repos</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="4">0</span><span class="gold"></span>
+                        <span class="stat-label">Shipped Projects</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="6">0</span><span class="gold">+</span>
+                        <span class="stat-label">App Releases</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-right reveal-up">
+                <div class="hero-image-wrapper">
+                    <div class="hero-image-frame"></div>
+                    <div class="hero-image-glow"></div>
+                    <img src="./Public/Images/profile.png" alt="Amartya Pratap Singh" class="hero-image">
+                    <div class="hero-image-badge">
+                        <span class="badge-dot"></span>
+                        Available for work
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <span>Scroll</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-index">01</span>
+                <h2 class="section-title reveal-up">About <span class="gold">Me</span></h2>
+                <div class="section-line reveal-up"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-text reveal-up">
+                    <p class="about-lead">
+                        I'm a <strong>Full-Stack Developer</strong> and <strong>Android App Developer</strong> who builds real products that people actually use -- from AI-powered apps to gaming community platforms.
+                    </p>
+                    <p>
+                        I've shipped a production Android app (Gen Me) with 6 releases on GitHub, built an AI visual problem-solving SaaS (Point Solver) deployed on Vercel, created a game downloads platform (GameVault), and I'm currently working as the web developer and server admin for Universe Roleplay, a GTA V gaming community.
+                    </p>
+                    <p>
+                        My stack includes React, Node.js, Kotlin with Jetpack Compose, and I work across the full pipeline from UI design to backend APIs to deployment. I write code that ships.
+                    </p>
+                    <div class="about-details">
+                        <div class="detail">
+                            <span class="detail-label">Name</span>
+                            <span class="detail-value">Amartya Pratap Singh</span>
+                        </div>
+                        <div class="detail">
+                            <span class="detail-label">Specialization</span>
+                            <span class="detail-value">Full-Stack Web & Android Apps</span>
+                        </div>
+                        <div class="detail">
+                            <span class="detail-label">Location</span>
+                            <span class="detail-value">India</span>
+                        </div>
+                        <div class="detail">
+                            <span class="detail-label">Current Work</span>
+                            <span class="detail-value available">Universe Roleplay (Web Dev & Admin)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual reveal-up">
+                    <div class="code-window">
+                        <div class="code-header">
+                            <div class="code-dots">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <span class="code-filename">amartya.config.js</span>
+                        </div>
+                        <pre class="code-body"><code><span class="code-keyword">const</span> <span class="code-var">amartya</span> = {
+  <span class="code-prop">name</span>: <span class="code-string">"Amartya Pratap Singh"</span>,
+  <span class="code-prop">role</span>: <span class="code-string">"Full-Stack & App Developer"</span>,
+  <span class="code-prop">currentWork</span>: <span class="code-string">"Universe Roleplay"</span>,
+  <span class="code-prop">shipped</span>: [
+    <span class="code-string">"Gen Me (Android AI App)"</span>,
+    <span class="code-string">"Point Solver (AI SaaS)"</span>,
+    <span class="code-string">"GameVault (Web Platform)"</span>,
+    <span class="code-string">"Universe RP (Client)"</span>
+  ],
+  <span class="code-prop">stack</span>: <span class="code-string">"React, Node, Kotlin, 
+  Jetpack Compose"</span>,
+  <span class="code-prop">githubRepos</span>: <span class="code-number">7</span>,
+  <span class="code-prop">hirable</span>: <span class="code-bool">true</span>
+};</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-index">02</span>
+                <h2 class="section-title reveal-up">My <span class="gold">Skills</span></h2>
+                <div class="section-line reveal-up"></div>
+            </div>
+
+            <div class="skills-categories">
+                <!-- Frontend -->
+                <div class="skill-category reveal-up">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                        </div>
+                        <h3 class="category-title">Front-End Development</h3>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon-wrap">
+                                <svg viewBox="0 0 128 128" width="32" height="32"><path fill="#E44D26" d="M19.037 113.876L9.032 1.661h109.936l-10.016 112.198-45.019 12.48z"/><path fill="#F16529" d="M64 116.8l36.378-10.086 8.559-95.878H64z"/><path fill="#EBEBEB" d="M64 52.455H45.788L44.53 38.361H64V24.599H29.489l.33 3.692 3.382 37.927H64zm0 35.743l-.061.017-15.327-4.14-.979-10.975H33.816l1.928 21.609 28.193 7.826.063-.017z"/><path fill="#fff" d="M63.952 52.455v13.763h16.947l-1.597 17.849-15.35 4.143v14.319l28.215-7.82.207-2.325 3.234-36.233.335-3.696h-3.708zm0-27.856v13.762h33.244l.276-3.092.628-6.978.329-3.692z"/></svg>
+                            </div>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon-wrap">
+                                <svg viewBox="0 0 128 128" width="32" height="32"><path fill="#1572B6" d="M19.67 26l8.069 90.493 36.206 10.05 36.307-10.063L108.33 26H19.67z"/><path fill="#33A9DC" d="M64.043 110.11l29.3-8.124 6.907-77.318h-36.21v85.442z"/><path fill="#fff" d="M64.043 62.577H48.76l-1.055-11.82h16.338V39.132H34.404l.264 2.957 2.71 30.37h26.665zm0 28.927l-.067.019-12.87-3.476-.823-9.21H38.56l1.619 18.153 23.797 6.603.067-.019v-12.07z"/><path fill="#EBEBEB" d="M64.009 62.577v11.625h14.191l-1.338 14.952-12.853 3.473v12.07l23.828-6.599.175-1.963 2.736-30.628.283-2.93H64.009zm0-23.445v11.625h29.08l.24-2.685.551-6.13.264-2.81H64.009z"/></svg>
+                            </div>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon-wrap">
+                                <svg viewBox="0 0 128 128" width="32" height="32"><path fill="#F0DB4F" d="M1.408 1.408h125.184v125.185H1.408z"/><path fill="#323330" d="M116.347 96.736c-.917-5.711-4.641-10.508-15.672-14.981-3.832-1.761-8.104-3.022-9.377-5.926-.452-1.69-.512-2.642-.226-3.665.821-3.32 4.784-4.355 7.925-3.403 2.023.678 3.938 2.237 5.093 4.724 5.402-3.498 5.391-3.475 9.163-5.879-1.381-2.141-2.118-3.129-3.022-4.045-3.249-3.629-7.676-5.498-14.756-5.355l-3.688.477c-3.534.893-6.902 2.748-8.877 5.235-5.926 6.724-4.236 18.492 2.975 23.335 7.104 5.332 17.54 6.545 18.873 11.531 1.297 6.104-4.486 8.08-10.234 7.378-4.236-.881-6.592-3.034-9.139-6.949l-9.516 5.485c1.083 2.533 2.445 3.63 4.401 5.879 9.421 9.91 33.003 9.395 37.241-5.613.153-.46 1.247-3.621.226-8.228zM69.439 58.943l-11.14-.006c0 8.757-.032 17.394-.032 26.16 0 5.559.282 10.655-.31 12.222-1.012 3.258-3.652 4.26-6.09 3.745-2.492-.54-3.763-2.202-5.238-4.026l-9.163 5.585c1.524 3.168 3.746 5.893 6.677 7.667 4.357 2.635 10.207 3.483 16.39 2.062 4.021-1.177 7.49-3.628 9.321-7.395 2.62-5.001 2.058-11.082 2.036-17.872.058-9.389.012-18.775.012-28.163l-.463.021z"/></svg>
+                            </div>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon-wrap">
+                                <svg viewBox="0 0 128 128" width="32" height="32"><path fill="#007acc" d="M2 63.91v62.5h125v-125H2zm100.73-5.01c3.28-.42 6.54-.21 9.8.17 2.86.34 5.6 1.13 8.13 2.43.6.31.59.58.41 1.14-.24.74-.51 1.46-.79 2.18-.36.93-.73 1.86-1.12 2.78-.16.38-.28.73-.71.47-2.83-1.47-5.88-2.26-9.1-2.34-1.93-.05-3.85.14-5.66.82-1.38.52-2.39 1.4-2.46 2.96-.08 1.64.73 2.71 2.04 3.48 2.05 1.21 4.3 1.89 6.51 2.69 2.04.73 4.05 1.54 5.88 2.72 4.76 3.09 6.22 9.73 3.43 14.87-1.7 3.14-4.47 4.95-7.77 5.93-1.79.53-3.63.73-5.49.82-3.72.17-7.36-.23-10.83-1.62-1.78-.72-3.42-1.68-4.85-2.99-.31-.28-.33-.49-.12-.83.82-1.3 1.6-2.61 2.38-3.93.26-.43.47-.45.86-.12 2.61 2.24 5.64 3.32 9.01 3.59 1.83.14 3.65.02 5.39-.56 1.79-.6 2.76-1.87 2.71-3.56-.05-1.53-.89-2.59-2.15-3.33-1.68-.99-3.52-1.61-5.34-2.31-2.12-.82-4.21-1.7-6.1-2.97-2.31-1.55-3.85-3.6-4.25-6.39-.62-4.33.56-7.96 3.94-10.72 2.12-1.73 4.59-2.64 7.25-3.1z"/><path fill="#007acc" d="M58.29 67.58H47v46.33h-10.2V67.58H25.55c-.42 0-.42-.33-.42-.67v-7.99c0-.54.2-.67.66-.67H58.5c.39 0 .57.17.57.55v8.07c0 .52-.15.71-.78.71z"/></svg>
+                            </div>
+                            <span>TypeScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon-wrap">
+                                <svg viewBox="0 0 128 128" width="32" height="32"><path fill="#61DAFB" d="M64 81.7c9.8 0 17.7-7.9 17.7-17.7S73.8 46.3 64 46.3 46.3 54.2 46.3 64 54.2 81.7 64 81.7z"/><path fill="#61DAFB" d="M64 24.9c-18 0-34.4 3.1-46.1 8.4C6.9 38.5 1.6 45.2 1.6 52.5c0 7.6 5.8 14.8 16 20.2C28.5 78.7 44.8 82 64 82c19.1 0 35.5-3.3 46.4-9.3 10.2-5.4 16-12.6 16-20.2 0-7.3-5.3-14-16.3-19.2C98.4 28 82 24.9 64 24.9zm0 52.6c-17.6 0-33.1-3.1-43.3-8.2C11.4 64.8 6.5 59 6.5 52.5c0-6.2 4.4-11.6 12.8-16 9.8-5.1 24.3-8.1 44.7-8.1 17.3 0 31.8 2.8 41.7 7.6 9.6 4.7 14.8 10.7 14.8 17.3-.1 6.6-5.6 13-15.9 18C94.7 76 79.4 77.5 64 77.5z" opacity=".6"/><path fill="#61DAFB" d="M42.6 35.4c9-15.5 20.4-27.5 30.5-32.8 9.4-4.9 17.3-4.6 22.3 1.3 5.2 6.1 5.6 16.8 1 30.2-3.9 11.3-11.7 24-21.7 35.5-10 11.7-20.7 20.5-30.4 25.8-11.2 6.1-20.4 6.8-25.6.7-5-5.8-5.1-16-0.5-28.9 3.8-10.6 12.7-23.6 24.4-31.8z" opacity=".6"/><path fill="#61DAFB" d="M42.7 92.6c9 15.5 20.1 27.2 30.1 32.4 9.3 4.8 17.2 4.5 22.2-1.5 5.2-6.1 5.8-17 1.4-30.5-3.8-11.2-11.4-23.6-21.3-35-10.1-11.8-20.9-20.8-30.7-26.2-11.3-6.2-20.6-7.1-25.7-1-5 5.8-4.9 15.9-.1 28.7 3.9 10.4 12.3 24.9 24.1 33.1z" opacity=".6"/></svg>
+                            </div>
+                            <span>React</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon-wrap">
+                                <svg viewBox="0 0 128 128" width="32" height="32"><path fill="#35495e" d="M0 8.934l49.854.158 14.167 24.47 14.432-24.47L128 8.935l-63.834 110.14zm26.98 3.9l22.864.002 14.167 24.47 14.432-24.47 22.864-.002-37.296 64.476z"/><path fill="#41B883" d="M25.479 12.833l38.52 66.593 38.52-66.593H80.748l-16.749 29.03-16.955-29.03z"/></svg>
+                            </div>
+                            <span>Vue.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon-wrap">
+                                <svg viewBox="0 0 128 128" width="32" height="32"><path fill="#38bdf8" d="M64.004 25.602c-17.067 0-27.73 8.534-32 25.602 6.398-8.534 13.867-11.734 22.398-9.598 4.871 1.219 8.352 4.746 12.207 8.656C72.883 56.746 80.195 64 96.004 64c17.066 0 27.73-8.534 32-25.602-6.399 8.534-13.867 11.734-22.399 9.598-4.87-1.218-8.347-4.746-12.207-8.656-6.27-6.484-13.586-13.738-29.394-13.738zM32.004 64c-17.066 0-27.73 8.534-32 25.602C6.402 81.068 13.87 77.868 22.402 80c4.871 1.219 8.352 4.746 12.207 8.656 6.274 6.484 13.586 13.738 29.395 13.738 17.066 0 27.73-8.534 32-25.602-6.399 8.534-13.867 11.734-22.399 9.598-4.87-1.219-8.347-4.746-12.207-8.656C55.124 71.254 47.812 64 32.004 64z"/></svg>
+                            </div>
+                            <span>Tailwind CSS</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon-wrap">
+                                <svg viewBox="0 0 128 128" width="32" height="32"><path d="M64 0C28.7 0 0 28.7 0 64s28.7 64 64 64 64-28.7 64-64S99.3 0 64 0zm32.7 114.4L48.4 41.8h-6.8v44.5h5.5V49.6l44.2 65.3c-8.1 4.7-17.4 7.5-27.3 7.5-30.1 0-54.4-24.4-54.4-54.4S33.9 13.6 64 13.6 118.4 38 118.4 68c0 17.5-8.2 33-20.7 43.4z" fill="#fff"/></svg>
+                            </div>
+                            <span>Next.js</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend -->
+                <div class="skill-category reveal-up">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 7h16M4 7v10a2 2 0 002 2h12a2 2 0 002-2V7M4 7l2-4h12l2 4"/><path d="M9 11h6"/></svg>
+                        </div>
+                        <h3 class="category-title">Back-End Development</h3>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon-wrap">
+                                <svg viewBox="0 0 128 128" width="32" height="32"><path fill="#8CC84B" d="M112.771 30.334L68.674 4.729c-2.781-1.584-6.402-1.584-9.205 0L14.901 30.334C12.031 31.985 10 35.088 10 38.407v51.142c0 3.319 2.084 6.423 4.954 8.083l11.775 6.688c5.628 2.772 7.617 2.772 10.178 2.772 8.333 0 13.093-5.039 13.093-13.828v-50.49c0-.713-.371-1.774-1.071-1.774h-5.623c-.712 0-2.306 1.061-2.306 1.774V91.18c0 3.822-3.978 7.636-10.471 4.422L18.459 89.09c-.46-.266-.693-.77-.693-1.335V38.407c0-.544.27-1.074.727-1.346l44.078-25.58c.457-.27 1.07-.27 1.526 0l44.078 25.58c.435.272.764.802.764 1.346v51.348c0 .564-.328 1.07-.764 1.335L63.904 117.09c-.436.253-1.037.28-1.49.015l-11.344-6.694c-.372-.204-.852-.286-1.228-.1-3.263 1.476-3.85 1.67-6.863 2.507-.748.206-.44.712.168 1.05l14.764 8.715c1.39.804 2.97 1.237 4.59 1.237 1.59 0 3.18-.433 4.59-1.237l44.078-25.605c2.87-1.672 4.83-4.764 4.83-8.083V38.407c-.001-3.319-1.96-6.422-4.83-8.073z"/></svg>
+                            </div>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon-wrap">
+                                <svg viewBox="0 0 128 128" width="32" height="32"><path fill="#fff" d="M126.67 98.44c-4.56 1.16-7.38.05-9.91-3.75-5.68-8.51-11.95-16.63-18-24.9-.78-1.07-1.59-2.12-2.6-3.45C89 76 82.18 85.64 75.69 95.67c-2.37 3.66-5.11 4.86-9.53 3.74L84.67 72 66.65 46.36c4.27-.87 7.21.19 9.54 3.82 4.26 6.63 9.09 12.88 14.08 19.94 5.15-7.18 9.95-13.54 14.27-20.21 2.07-3.2 4.56-4.2 8.31-3.36L96.67 72l30 26.44zM1.33 61.74c.72-3.61 1.2-7.29 2.2-10.83 6-21.43 30.6-30.34 47.5-17.06C60.93 41.64 63.39 52.62 62.9 65H7.1c-.84 22.21 15.15 35.62 35.53 28.78 7.15-2.4 11.36-8 13.47-15 1.07-3.51 2.93-4.2 6.27-3.15-1.85 8.26-5.72 15.14-13 19.58-11.06 6.76-28.7 6.1-38.16-3.75C4.58 85.18 1.64 77.39 1.38 68.38L1.33 61.74zm6.01-2.44h49.42c-.45-16.66-10.35-27.1-24.6-27.1-15.07-.02-24.15 10.26-24.82 27.1z"/></svg>
+                            </div>
+                            <span>Express.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon-wrap">
+                                <svg viewBox="0 0 128 128" width="32" height="32"><path fill="#0277BD" d="M64.003 24.396L21.324 46.203v43.594l42.679 21.808 42.674-21.808V46.203L64.003 24.396zm0 10.882l31.775 16.219-31.775 16.223-31.771-16.223 31.771-16.219zM28.396 53.758l31.143 15.893v31.796L28.396 85.557V53.758zm71.212 0v31.8L68.461 101.45V69.65l31.147-15.892z"/></svg>
+                            </div>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon-wrap">
+                                <svg viewBox="0 0 128 128" width="32" height="32"><path fill="#47A248" d="M90.491 57.282c-.37-4.79-1.86-9.12-5.48-12.58-4.11-3.94-9.2-5.71-14.79-6.05-5.31-.33-10.31.78-14.81 3.61-1.65.99-3.1 2.26-4.78 3.5.96-7.85 3.52-14.7 9.74-19.8 3.65-3 7.88-4.67 12.5-5.37 5.71-.87 11.28-.34 16.52 2.14.49.23.85.11 1.15-.34.94-1.38 1.92-2.73 2.87-4.1.38-.55.31-.89-.27-1.24-2.94-1.77-6.11-2.93-9.47-3.61-7.13-1.44-14.08-.72-20.56 2.71-8.83 4.66-14.15 12.18-16.85 21.63-1 3.5-1.53 7.1-1.72 10.75-.01.18-.07.36-.11.54-.29-.03-.57-.05-.86-.1-8.1-1.49-14.09-5.93-17.59-13.39-2.74-5.83-3.22-12-1.63-18.3 2.11-8.39 7.42-14.35 15.25-17.89 4.42-2 9.13-2.73 14-2.54 4.36.17 8.52 1.19 12.37 3.28 1.02.56 1.41.34 1.88-.59.64-1.27 1.37-2.5 2.07-3.74.38-.67.24-1.06-.4-1.46C66.42 2.77 58.95 1.39 51.07 2.45c-4.52.61-8.74 2.11-12.57 4.68C29.82 13.5 25.4 22.38 25.95 33.15c.17 3.34.76 6.6 1.87 9.76 4.01 11.44 12.19 18.38 24.06 20.86 1.55.33 3.15.44 4.73.65.01.22.02.44.03.66-.42 4.91-1.82 9.47-4.96 13.34-3.97 4.89-9.16 7.43-15.37 7.92-5.7.45-11.06-.73-15.78-4.05-.56-.4-.96-.35-1.35.2-.98 1.36-1.99 2.71-2.99 4.06-.33.44-.26.77.19 1.1 2.83 2.1 5.97 3.5 9.37 4.35 7.15 1.78 14.07 1.19 20.57-2.24 8.82-4.65 14.01-12.16 16.61-21.62.83-3.02 1.36-6.12 1.55-9.27.01-.19.07-.38.11-.57.33.04.66.06.98.12 7.93 1.63 13.74 5.95 17.2 13.24 2.4 5.06 3.17 10.4 2.14 15.96-1.76 9.48-7.15 15.97-16.06 19.57-4.45 1.8-9.13 2.44-13.95 2.07-4.61-.36-8.93-1.68-12.83-4.15-.55-.35-.93-.28-1.29.26-.98 1.47-2 2.92-3.02 4.37-.31.44-.18.79.27 1.07 3.89 2.48 8.16 3.93 12.71 4.64 3.68.58 7.38.69 11.09.24 10.66-1.28 19.07-6.35 24.54-15.76 3.07-5.28 4.37-11.07 4.15-17.19z"/></svg>
+                            </div>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon-wrap">
+                                <svg viewBox="0 0 128 128" width="32" height="32"><path fill="#336791" d="M93.809 92.112c.785-6.533.55-7.492 5.416-6.433l1.235.108c3.742.17 8.637-.602 11.513-1.938 6.191-2.873 9.861-7.668 3.758-6.409-13.924 2.873-14.881-1.842-14.881-1.842 14.703-21.815 20.849-49.508 15.543-56.287-14.47-18.489-39.478-9.749-39.478-9.749l-.134.025c-2.751-.571-5.83-.912-9.289-.968-6.301-.104-11.082 1.652-14.535 4.401 0 0-44.683-18.409-42.604 23.151.442 8.841 12.672 66.898 27.26 49.362 5.332-6.412 10.484-11.834 10.484-11.834 2.558 1.7 5.622 2.567 8.834 2.255l.249-.212c-.078.796-.042 1.575.098 2.497-3.757 4.199-2.653 4.936-10.166 6.482-7.602 1.566-3.136 4.355-.221 5.084 3.535.884 11.712 2.136 17.238-5.598l-.22.882c1.474 1.18 1.375 8.477 1.583 13.69.208 5.213.78 10.07 2.36 12.88 1.58 2.81 3.387 10.022 17.833 7.953 12.088-1.731 18.352-6.224 19.228-13.712l1.968-14.075z"/><path fill="#fff" d="M62.184 89.404s.544 8.97 3.494 12.108c0 0 3.448 3.393 2.024 8.994l-1.362 7.022c-.558 3.487-.06 6.218 2.6 7.487l.422.144c-3.232-3.052-2.466-6.942-1.843-9.385l1.614-7.418c.96-3.652-.823-6.17-2.7-8.692-1.955-2.625-4.258-5.775-4.249-10.26z" opacity=".75"/><path fill="#336791" d="M85.5 51.098c-.593.023-1.08.082-1.46.182-.26.068-.459.25-.459.455.162-.016.393-.068.639-.068.405 0 .75.222.75.504 0 .636-.924 1.139-.924 1.709 0 .036.003.068.01.1.002.012.007.023.013.035.065.156.3.29.58.327.676.093 1.61-.462 1.785-1.107.245-.907-.386-2.17-.934-2.137zm-16.717-.13c.174.645 1.108 1.2 1.785 1.107.28-.037.515-.17.58-.327.006-.012.01-.023.013-.035.007-.032.01-.064.01-.1 0-.57-.924-1.073-.924-1.709 0-.282.345-.504.75-.504.246 0 .477.052.639.068 0-.205-.199-.387-.459-.455-.38-.1-.867-.159-1.46-.182-.548-.033-1.179 1.23-.934 2.137z"/></svg>
+                            </div>
+                            <span>PostgreSQL</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon-wrap">
+                                <svg viewBox="0 0 128 128" width="32" height="32"><path fill="#E535AB" d="M18.39 96.852l-4.6-2.657L64.009 5.42l4.6 2.657zm86.58-68.882H25.03v5.315h79.94zM29.2 89.39l39.87-69.01 4.603 2.658-39.87 69.01zm53.466 1.717L42.846 22.1l4.6-2.656 39.82 69.009zM25.298 75.2v-5.314h79.94V75.2zm84.66 19.138l-49.974-28.856v-5.315L109.958 89.023z"/><path fill="#E535AB" d="M64.037 123.27c-5.678 0-10.287-4.607-10.287-10.283 0-5.674 4.609-10.28 10.287-10.28 5.676 0 10.285 4.606 10.285 10.28 0 5.676-4.609 10.283-10.285 10.283zm0-14.776c-2.48 0-4.498 2.015-4.498 4.493 0 2.48 2.018 4.497 4.498 4.497s4.496-2.017 4.496-4.497c0-2.478-2.016-4.493-4.496-4.493z"/><path fill="#E535AB" d="M113.42 93.615c-2.838 4.907-9.127 6.59-14.04 3.755-4.91-2.84-6.593-9.126-3.755-14.036 2.84-4.91 9.126-6.593 14.037-3.755 4.91 2.838 6.594 9.127 3.758 14.036zm-12.78-7.382c-1.241 2.148-.505 4.894 1.644 6.135 2.15 1.243 4.895.505 6.136-1.644 1.242-2.15.506-4.896-1.643-6.136-2.15-1.241-4.895-.505-6.137 1.645z"/><path fill="#E535AB" d="M18.335 62.362c-2.838 4.907-9.127 6.591-14.038 3.756-4.91-2.84-6.593-9.128-3.755-14.037 2.838-4.91 9.127-6.594 14.036-3.755 4.911 2.837 6.594 9.126 3.757 14.036zm-12.782-7.382c-1.241 2.149-.505 4.896 1.644 6.137 2.15 1.241 4.896.505 6.137-1.645 1.24-2.15.505-4.895-1.644-6.136-2.15-1.242-4.896-.505-6.137 1.644z"/><path fill="#E535AB" d="M113.42 62.362c2.838 4.907 1.155 11.196-3.757 14.036-4.91 2.835-11.198 1.151-14.037-3.756-2.838-4.91-1.155-11.199 3.755-14.036 4.91-2.839 11.198-1.155 14.039 3.756zm-12.78 7.381c1.24 2.15 3.986 2.886 6.136 1.645 2.148-1.241 2.885-3.988 1.643-6.137-1.241-2.149-3.987-2.886-6.136-1.644-2.15 1.241-2.886 3.987-1.644 6.136z"/><path fill="#E535AB" d="M18.335 93.615c2.836 4.909 1.153 11.198-3.757 14.036-4.909 2.835-11.198 1.152-14.036-3.755-2.838-4.91-1.155-11.198 3.755-14.036 4.91-2.838 11.198-1.155 14.038 3.755zm-12.782 7.382c1.241 2.15 3.987 2.886 6.137 1.644 2.149-1.24 2.885-3.987 1.644-6.135-1.241-2.15-3.987-2.887-6.137-1.645-2.149 1.241-2.885 3.987-1.644 6.136z"/><path fill="#E535AB" d="M64.037 25.293c-5.678 0-10.287-4.608-10.287-10.283C53.75 9.336 58.359 4.73 64.037 4.73c5.676 0 10.285 4.607 10.285 10.28 0 5.675-4.609 10.283-10.285 10.283zm0-14.776c-2.48 0-4.498 2.016-4.498 4.493 0 2.48 2.018 4.497 4.498 4.497s4.496-2.017 4.496-4.497c0-2.477-2.016-4.493-4.496-4.493z"/></svg>
+                            </div>
+                            <span>GraphQL</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon-wrap">
+                                <svg viewBox="0 0 128 128" width="32" height="32"><path fill="#CB3837" d="M2 38.6h124v52.8H64v8.8H36.2v-8.8H2V38.6zm6.3 44h17.6v-26.4h8.8v26.4h8.8V47.4H8.3v35.2zm44-35.2v35.2h17.6v-8.8h17.6V47.4H52.3zm17.6 8.8h8.8v17.6h-8.8V56.2zm26.4-8.8v26.4h17.6V56.2h8.8v17.6h8.8V47.4H96.3z"/></svg>
+                            </div>
+                            <span>REST APIs</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon-wrap">
+                                <svg viewBox="0 0 128 128" width="32" height="32"><path fill="#F58220" d="M15.3 35c-2 2.8-3.1 6.2-3.1 10.2v37.6c0 4 1.1 7.4 3.1 10.2 2 2.8 5.1 4.6 9.1 5.2l36 5.8c3.9.6 7.3-.2 10-2.4 2.8-2.2 4.1-5.4 4.1-9.4V54.6c0-4-1.4-7.2-4.1-9.4-2.8-2.2-6.1-3-10-2.4l-36 5.8c-4 .6-7.1 2.4-9.1 5.2zm84.3-8.9l-20.7 10.3v55.2l20.7 10.3c3.7 1.8 7 2.4 10 1.6 3-.8 4.5-3.2 4.5-7.2V33.7c0-4-1.5-6.4-4.5-7.2-3-.8-6.3-.2-10 1.6z"/></svg>
+                            </div>
+                            <span>Firebase</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- App Development -->
+                <div class="skill-category reveal-up">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg>
+                        </div>
+                        <h3 class="category-title">App Development</h3>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon-wrap">
+                                <svg viewBox="0 0 128 128" width="32" height="32"><path fill="#61DAFB" d="M64 81.7c9.8 0 17.7-7.9 17.7-17.7S73.8 46.3 64 46.3 46.3 54.2 46.3 64 54.2 81.7 64 81.7z"/><path fill="#61DAFB" d="M64 24.9c-18 0-34.4 3.1-46.1 8.4C6.9 38.5 1.6 45.2 1.6 52.5c0 7.6 5.8 14.8 16 20.2C28.5 78.7 44.8 82 64 82c19.1 0 35.5-3.3 46.4-9.3 10.2-5.4 16-12.6 16-20.2 0-7.3-5.3-14-16.3-19.2C98.4 28 82 24.9 64 24.9z" opacity=".6"/><path fill="#61DAFB" d="M42.6 35.4c9-15.5 20.4-27.5 30.5-32.8 9.4-4.9 17.3-4.6 22.3 1.3 5.2 6.1 5.6 16.8 1 30.2-3.9 11.3-11.7 24-21.7 35.5-10 11.7-20.7 20.5-30.4 25.8-11.2 6.1-20.4 6.8-25.6.7-5-5.8-5.1-16-0.5-28.9 3.8-10.6 12.7-23.6 24.4-31.8z" opacity=".6"/><path fill="#61DAFB" d="M42.7 92.6c9 15.5 20.1 27.2 30.1 32.4 9.3 4.8 17.2 4.5 22.2-1.5 5.2-6.1 5.8-17 1.4-30.5-3.8-11.2-11.4-23.6-21.3-35-10.1-11.8-20.9-20.8-30.7-26.2-11.3-6.2-20.6-7.1-25.7-1-5 5.8-4.9 15.9-.1 28.7 3.9 10.4 12.3 24.9 24.1 33.1z" opacity=".6"/></svg>
+                            </div>
+                            <span>React Native</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon-wrap">
+                                <svg viewBox="0 0 128 128" width="32" height="32"><path fill="#3FB6D3" d="M12.3 64.2L63.7 115.6 115.1 64.2 63.7 12.8z"/><path fill="#27AACD" d="M63.7 12.8L12.3 64.2 63.7 115.6z"/><path fill="#19599A" d="M63.7 12.8L37.4 95.6l26.3 20 26.3-20z" opacity=".8"/><path fill="#1B6AC0" d="M63.7 12.8L37.4 95.6l26.3 20z" opacity=".8"/></svg>
+                            </div>
+                            <span>Flutter</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon-wrap">
+                                <svg viewBox="0 0 128 128" width="32" height="32"><path fill="#3ddc84" d="M21.008 81.672v20.24c0 4.456 3.616 8.072 8.072 8.072h8.952v17.064c0 .448.364.812.812.812h.036c5.304-.036 9.6-4.332 9.6-9.636V89.26h11.04v18.964c0 5.304 4.296 9.6 9.6 9.636h.036c.448 0 .812-.364.812-.812V109.984h8.952c4.456 0 8.072-3.616 8.072-8.072V81.672z"/><path fill="#3ddc84" d="M97.592 53.672c-2.68 0-5.16.836-7.2 2.26V46.56C90.392 33.752 79.92 23.2 67.12 23.044c-.244-.004-.488-.004-.736-.004h-4.768c-.248 0-.492 0-.736.004C48.08 23.2 37.608 33.752 37.608 46.56v9.372c-2.04-1.424-4.52-2.26-7.2-2.26-5.304 0-9.6 4.296-9.636 9.6v.036c0 .448.364.812.812.812h.06v17.552c0 .448.364.812.812.812h93.088c.448 0 .812-.364.812-.812V64.12h.06c.448 0 .812-.364.812-.812v-.036c-.036-5.304-4.332-9.6-9.636-9.6zM49.208 46.56c0-7.184 5.748-13.036 12.884-13.196.212-.004.424-.004.64-.004h2.532c.216 0 .428 0 .64.004 7.136.16 12.884 6.012 12.884 13.196v35.112H49.208z"/><path fill="#3ddc84" d="M64 15.456c1.916 0 3.64-.804 4.868-2.088l6.4-11.2c.52-.816.076-1.9-.876-2.14-.132-.032-.268-.048-.404-.048-.608 0-1.172.324-1.48.852L67.66 9.8c-1.076.508-2.32.808-3.66.808-1.34 0-2.584-.3-3.66-.808l-4.848-8.968c-.308-.528-.872-.852-1.48-.852-.136 0-.272.016-.404.048-.952.24-1.396 1.324-.876 2.14l6.4 11.2c1.228 1.284 2.952 2.088 4.868 2.088z"/></svg>
+                            </div>
+                            <span>Android</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon-wrap">
+                                <svg viewBox="0 0 128 128" width="32" height="32"><path fill="#F05138" d="M126.33 34.06c-.14-2.1-.73-5.12-1.68-7.63-1.8-4.72-4.48-8.75-7.96-11.96-3.52-3.25-7.61-5.7-12.15-7.29C101.1 5.8 97.1 5.07 93.5 5c-2.2-.04-5.17.14-7.36.42-5.44.7-10.58 2.45-15.29 5.2A51.24 51.24 0 0064 16.8a50.62 50.62 0 00-6.85-6.18c-4.71-2.75-9.85-4.5-15.3-5.2C39.67 5.14 36.7 4.96 34.5 5c-3.6.07-7.6.8-11.04 2.18-4.54 1.59-8.63 4.04-12.15 7.29-3.48 3.21-6.16 7.24-7.96 11.96-.95 2.51-1.54 5.53-1.68 7.63-.3 4.49.04 9.2.83 13.68a63.9 63.9 0 005.1 15.68c2.77 5.82 6.27 11.33 10.39 16.4A110.55 110.55 0 0038.2 98.8c5.58 4.68 10.5 7.63 13.38 9.16 2.06 1.09 3.61 1.73 5.2 2.38 1.19.49 2.44.91 3.94 1.01.7.05 1.42.05 2.12.05.7 0 1.42 0 2.12-.05 1.5-.1 2.75-.52 3.94-1.01 1.59-.65 3.14-1.29 5.2-2.38 2.88-1.53 7.8-4.48 13.38-9.16a110.55 110.55 0 0020.21-19.17c4.12-5.07 7.62-10.58 10.39-16.4a63.9 63.9 0 005.1-15.68c.79-4.48 1.13-9.19.83-13.68h.02z"/><path fill="#fff" d="M85.72 26.3c7.66 8.68 12.2 19.6 12.61 30.38.02.67.03 1.34.03 2 0 .17 0 .34-.01.51-.24 13.89-6.79 26.8-17.42 35.59C70.4 103.5 59 108.11 48.36 105c-.74-.22-1.47-.46-2.18-.74C33.55 99.4 24.12 87.47 22.15 73.54c-.18-1.29-.3-2.6-.36-3.93-.02-.55-.04-1.1-.04-1.65 0-1.37.07-2.73.2-4.06 1.32-13.31 8.71-25.34 20.27-32.7a43.58 43.58 0 0110.6-4.87c-6.16 6.89-9.95 15.98-9.95 25.97 0 .6.01 1.19.04 1.78.39 8.69 3.65 16.68 8.99 23.09l.03.04c2.53 2.99 5.43 5.65 8.63 7.9l.36.24c.73.51 1.49.99 2.26 1.44l.11.07.52.3c.62.36 1.26.7 1.91 1.02l.44.22c.58.28 1.17.55 1.77.8l.45.18c.71.29 1.43.56 2.17.79.16.05.31.12.47.16.74.24 1.49.44 2.25.62.35.08.7.16 1.06.23.6.12 1.21.21 1.83.29.32.04.64.1.96.12.7.07 1.4.11 2.1.12h.21c5.72-.08 11.2-1.38 16.23-3.82l.04-.02c1.77-.87 3.47-1.87 5.08-3 .12-.09.24-.17.36-.26 1.51-1.08 2.95-2.26 4.29-3.54l.12-.12c1.2-1.14 2.33-2.37 3.37-3.66.27-.33.53-.67.79-1.01.7-.93 1.35-1.89 1.97-2.89.2-.33.4-.66.6-1 .6-1.04 1.15-2.1 1.65-3.2.16-.35.32-.7.47-1.05.44-1.03.83-2.08 1.18-3.15.11-.33.22-.66.32-1 .31-1.01.57-2.03.79-3.07.07-.33.14-.67.2-1 .24-1.28.41-2.58.49-3.9.02-.35.04-.7.05-1.06.07-1.66.01-3.33-.15-4.98-.05-.56-.12-1.12-.2-1.68a41.5 41.5 0 00-5.86-15.7c-1.56-2.49-3.36-4.85-5.38-7.02z"/></svg>
+                            </div>
+                            <span>iOS / Swift</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon-wrap">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#c9a227" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                            </div>
+                            <span>Dart</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon-wrap">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#c9a227" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 000 20 14.5 14.5 0 000-20M2 12h20"/></svg>
+                            </div>
+                            <span>API Integration</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools & DevOps -->
+                <div class="skill-category reveal-up">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+                        </div>
+                        <h3 class="category-title">Tools & DevOps</h3>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon-wrap">
+                                <svg viewBox="0 0 128 128" width="32" height="32"><path fill="#F34F29" d="M124.737 58.378L69.621 3.264c-3.172-3.174-8.32-3.174-11.497 0L46.68 14.71l14.518 14.518c3.375-1.139 7.243-.375 9.932 2.314 2.703 2.706 3.461 6.607 2.294 9.993l13.992 13.993c3.385-1.167 7.292-.413 9.994 2.295 3.78 3.777 3.78 9.9 0 13.679a9.673 9.673 0 01-13.683 0 9.677 9.677 0 01-2.105-10.521L68.574 47.933l-.002 34.341a9.708 9.708 0 012.559 1.828c3.778 3.777 3.778 9.898 0 13.683-3.779 3.777-9.904 3.777-13.679 0-3.778-3.784-3.778-9.905 0-13.683a9.65 9.65 0 013.167-2.11V47.333a9.581 9.581 0 01-3.167-2.111c-2.862-2.86-3.551-7.06-2.083-10.576L41.056 20.333 3.264 58.123a8.133 8.133 0 000 11.5l55.117 55.114c3.174 3.174 8.32 3.174 11.499 0l54.858-54.858a8.135 8.135 0 00-.001-11.501z"/></svg>
+                            </div>
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon-wrap">
+                                <svg viewBox="0 0 128 128" width="32" height="32"><path fill="#2396ED" d="M124.8 52.1c-4.3-2.5-10-2.8-14.8-1.4-.6-5.2-4-9.7-8-12.9l-1.6-1.3-1.4 1.6c-2.7 3.3-3.6 8.7-3.2 12.9.3 3.2 1.5 6.4 3.6 8.9-1.7 1 -3.5 1.7-5.2 2.3-3.4 1.2-7.1 1.9-10.7 1.9H.8l-.2 1.9c-.5 5.7.2 11.5 2.4 16.9l.8 1.6h.03c6 10.4 16.6 15.2 28.2 15.2 22.2 0 40.7-10.3 50.3-32.4 5.6.3 11.5-1.4 14.4-6.4l.7-1.2-1.5-.9zm-101 17.2c0 1.8-1.5 3.3-3.3 3.3S17.2 71 17.2 69.3 18.7 66 20.5 66s3.3 1.5 3.3 3.3zm15.8 0c0 1.8-1.5 3.3-3.3 3.3S33 71 33 69.3 34.5 66 36.3 66s3.3 1.5 3.3 3.3zm15.7 0c0 1.8-1.5 3.3-3.3 3.3S48.7 71 48.7 69.3s1.5-3.3 3.3-3.3 3.3 1.5 3.3 3.3zm15.8 0c0 1.8-1.5 3.3-3.3 3.3S64.5 71 64.5 69.3 66 66 67.8 66s3.3 1.5 3.3 3.3zm15.8 0c0 1.8-1.5 3.3-3.3 3.3S80.3 71 80.3 69.3s1.5-3.3 3.3-3.3 3.3 1.5 3.3 3.3zm15.7 0c0 1.8-1.5 3.3-3.3 3.3s-3.3-1.5-3.3-3.3 1.5-3.3 3.3-3.3 3.3 1.5 3.3 3.3z"/></svg>
+                            </div>
+                            <span>Docker</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon-wrap">
+                                <svg viewBox="0 0 128 128" width="32" height="32"><path fill="#F1502F" d="M3.348 0h121.304C127.59 0 130 2.41 130 5.348v117.304c0 2.938-2.41 5.348-5.348 5.348H3.348C.41 128-2 125.59-2 122.652V5.348C-2 2.41.41 0 3.348 0z"/><path fill="#fff" d="M27.133 98.133L24 94l13.8-13.6L24 66.533l3.133-3.133L44.8 80.4zM66.533 98.133H48v-6.8h18.533z"/></svg>
+                            </div>
+                            <span>AWS</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon-wrap">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#c9a227" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                            </div>
+                            <span>CI/CD</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon-wrap">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#c9a227" stroke-width="1.5"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/><path d="M3.27 6.96L12 12.01l8.73-5.05M12 22.08V12"/></svg>
+                            </div>
+                            <span>Webpack/Vite</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon-wrap">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#c9a227" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/></svg>
+                            </div>
+                            <span>Figma</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-index">03</span>
+                <h2 class="section-title reveal-up">Featured <span class="gold">Projects</span></h2>
+                <div class="section-line reveal-up"></div>
+            </div>
+
+            <!-- Gen Me - Featured Project Showcase -->
+            <div class="featured-project reveal-up" id="genme">
+                <div class="featured-badge">Featured Project</div>
+                <div class="featured-grid">
+                    <div class="featured-screenshots">
+                        <div class="phone-gallery">
+                            <div class="phone-frame active" data-index="0">
+                                <img src="./Public/Images/1.png" alt="Gen Me - Home Screen with AI Tools" loading="lazy">
+                            </div>
+                            <div class="phone-frame" data-index="1">
+                                <img src="./Public/Images/2.png" alt="Gen Me - Generate Options Modal" loading="lazy">
+                            </div>
+                            <div class="phone-frame" data-index="2">
+                                <img src="./Public/Images/3.png" alt="Gen Me - Settings Screen" loading="lazy">
+                            </div>
+                            <div class="phone-frame" data-index="3">
+                                <img src="./Public/Images/4.png" alt="Gen Me - Help Center" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="gallery-dots">
+                            <button class="gallery-dot active" data-index="0" aria-label="Screenshot 1"></button>
+                            <button class="gallery-dot" data-index="1" aria-label="Screenshot 2"></button>
+                            <button class="gallery-dot" data-index="2" aria-label="Screenshot 3"></button>
+                            <button class="gallery-dot" data-index="3" aria-label="Screenshot 4"></button>
+                        </div>
+                    </div>
+                    <div class="featured-info">
+                        <div class="project-tags">
+                            <span>Kotlin</span>
+                            <span>Jetpack Compose</span>
+                            <span>Material Design 3</span>
+                            <span>AI/ML</span>
+                        </div>
+                        <h3 class="featured-title">Gen Me - AI Style Changer</h3>
+                        <p class="featured-desc">
+                            A full-featured Android app powered by AI that lets users transform their appearance. Built entirely in Kotlin with Jetpack Compose and Material Design 3.
+                        </p>
+                        <ul class="featured-features">
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                                <span><strong>Cloth Changer</strong> - Upload photos and try new outfits with AI</span>
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                                <span><strong>Hairstyle Changer</strong> - Transform your hairstyle instantly</span>
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                                <span><strong>Beard Maker, Age Changer, Face Generator</strong></span>
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                                <span><strong>Background Changer</strong> - Swap backgrounds seamlessly</span>
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                                <span><strong>Gen ME Model</strong> - Switchable AI models (1.4 Flash / 1.4 Pro)</span>
+                            </li>
+                        </ul>
+                        <div class="featured-meta">
+                            <span class="meta-item">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                                6 Releases
+                            </span>
+                            <span class="meta-item">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77"/></svg>
+                                27 Commits
+                            </span>
+                            <span class="meta-item">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                Kotlin 100%
+                            </span>
+                        </div>
+                        <div class="featured-actions">
+                            <a href="https://github.com/Amartyapratapsingh/Gen_Me" target="_blank" rel="noopener" class="btn btn-primary">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                                <span>View on GitHub</span>
+                            </a>
+                            <a href="https://github.com/Amartyapratapsingh/Gen_Me/releases" target="_blank" rel="noopener" class="btn btn-ghost">
+                                <span>Download APK</span>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Point Solver - Featured Web Project -->
+            <div class="featured-project featured-web reveal-up" id="pointsolver">
+                <div class="featured-badge">Featured Project</div>
+                <div class="featured-grid featured-grid-web">
+                    <div class="featured-info">
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>Vite</span>
+                            <span>AI / Computer Vision</span>
+                            <span>Vercel</span>
+                        </div>
+                        <h3 class="featured-title">Point Solver - AI Visual Problem Solving</h3>
+                        <p class="featured-desc">
+                            A full-stack web application that uses advanced AI and computer vision to analyze images and solve visual problems instantly. Upload any image, ask any question, and get AI-powered insights in seconds.
+                        </p>
+                        <ul class="featured-features">
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                                <span><strong>Advanced AI Processing</strong> - Analyzes visual information with detailed answers</span>
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                                <span><strong>Multi-format Support</strong> - JPEG, PNG, GIF, and WebP uploads</span>
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                                <span><strong>Real-time Results</strong> - Instant responses with optimized pipeline</span>
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                                <span><strong>Privacy-focused</strong> - Encrypted data, never shared with third parties</span>
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                                <span><strong>SaaS Pricing</strong> - Free Trial, Pro ($50/yr), Enterprise ($300/yr) tiers</span>
+                            </li>
+                        </ul>
+                        <div class="featured-meta">
+                            <span class="meta-item">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 000 20 14.5 14.5 0 000-20M2 12h20"/></svg>
+                                Live on Vercel
+                            </span>
+                            <span class="meta-item">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                                Full-Stack Web App
+                            </span>
+                            <span class="meta-item">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                                Auth + Payments
+                            </span>
+                        </div>
+                        <div class="featured-actions">
+                            <a href="https://point-solver-frontend.vercel.app/" target="_blank" rel="noopener" class="btn btn-primary">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                                <span>Visit Live Site</span>
+                            </a>
+                            <a href="https://github.com/Amartyapratapsingh" target="_blank" rel="noopener" class="btn btn-ghost">
+                                <span>View GitHub</span>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="featured-browser">
+                        <div class="browser-chrome">
+                            <div class="browser-dots">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <div class="browser-url">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                                <span>point-solver-frontend.vercel.app</span>
+                            </div>
+                        </div>
+                        <div class="browser-viewport">
+                            <iframe src="https://point-solver-frontend.vercel.app/" title="Point Solver Preview" loading="lazy" sandbox="allow-scripts allow-same-origin"></iframe>
+                            <div class="browser-overlay">
+                                <a href="https://point-solver-frontend.vercel.app/" target="_blank" rel="noopener" class="browser-visit-btn">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                                    Open Full Site
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GameVault - Featured Web Project -->
+            <div class="featured-project featured-web reveal-up" id="gamevault">
+                <div class="featured-badge">Featured Project</div>
+                <div class="featured-grid featured-grid-web featured-grid-reverse">
+                    <div class="featured-browser">
+                        <div class="browser-chrome">
+                            <div class="browser-dots">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <div class="browser-url">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                                <span>games.arkyon.dev</span>
+                            </div>
+                        </div>
+                        <div class="browser-viewport">
+                            <iframe src="https://games.arkyon.dev/" title="GameVault Preview" loading="lazy" sandbox="allow-scripts allow-same-origin"></iframe>
+                            <div class="browser-overlay">
+                                <a href="https://games.arkyon.dev/" target="_blank" rel="noopener" class="browser-visit-btn">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                                    Open Full Site
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured-info">
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>REST API</span>
+                            <span>Responsive UI</span>
+                        </div>
+                        <h3 class="featured-title">GameVault - Free Game Downloads Platform</h3>
+                        <p class="featured-desc">
+                            A full-stack gaming platform where users can discover, browse, and download free games across every genre. Features a curated catalog of AAA and indie titles with a sleek, modern interface.
+                        </p>
+                        <ul class="featured-features">
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                                <span><strong>Curated Game Library</strong> - 15+ AAA titles including Cyberpunk 2077, GTA 5, God of War Ragnarok, RDR2, Spider-Man</span>
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                                <span><strong>Category System</strong> - RPG, Action, Racing, Fighting, Survival, Open World genres</span>
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                                <span><strong>Search & Discovery</strong> - Real-time search with game detail pages</span>
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                                <span><strong>Top Games Rankings</strong> - Curated featured and trending sections</span>
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                                <span><strong>Modern Dark UI</strong> - Gradient-rich gaming aesthetic with smooth animations</span>
+                            </li>
+                        </ul>
+                        <div class="featured-meta">
+                            <span class="meta-item">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 000 20 14.5 14.5 0 000-20M2 12h20"/></svg>
+                                Live on Arkyon.dev
+                            </span>
+                            <span class="meta-item">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                                Full-Stack Web App
+                            </span>
+                            <span class="meta-item">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>
+                                15+ Game Titles
+                            </span>
+                        </div>
+                        <div class="featured-actions">
+                            <a href="https://games.arkyon.dev/" target="_blank" rel="noopener" class="btn btn-primary">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                                <span>Visit Live Site</span>
+                            </a>
+                            <a href="https://github.com/Amartyapratapsingh/GameVault" target="_blank" rel="noopener" class="btn btn-ghost">
+                                <span>View on GitHub</span>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Universe Roleplay - Featured Project (Client Work) -->
+            <div class="featured-project featured-web reveal-up" id="universerp">
+                <div class="featured-badge">Client Work - Current</div>
+                <div class="featured-grid featured-grid-web">
+                    <div class="featured-info">
+                        <div class="project-tags">
+                            <span>HTML / CSS / JS</span>
+                            <span>Responsive Design</span>
+                            <span>Gaming</span>
+                            <span>FiveM / GTA V</span>
+                        </div>
+                        <h3 class="featured-title">Universe Roleplay - Gaming Community Website</h3>
+                        <p class="featured-desc">
+                            Currently working as the <strong>Web Developer</strong> and <strong>Server Admin</strong> for Universe Roleplay, a GTA V FiveM roleplay gaming community. Built and maintain the full website showcasing the server's features, factions, and community.
+                        </p>
+                        <ul class="featured-features">
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                                <span><strong>Immersive Landing Page</strong> - Cinematic hero with live player count (0/500 capacity)</span>
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                                <span><strong>Faction Showcases</strong> - EMS, FIB, Vagos, Ballas with imagery and lore descriptions</span>
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                                <span><strong>Feature Highlights</strong> - Economy system, car customization, bank robberies, supercars</span>
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                                <span><strong>Community Integration</strong> - Discord link, forum system, and join CTA</span>
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                                <span><strong>Server Admin</strong> - Also serving as admin managing the roleplay server</span>
+                            </li>
+                        </ul>
+                        <div class="featured-meta">
+                            <span class="meta-item">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 000 20 14.5 14.5 0 000-20M2 12h20"/></svg>
+                                gta5universerp.com
+                            </span>
+                            <span class="meta-item">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+                                500 Player Capacity
+                            </span>
+                            <span class="meta-item">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                                Web Dev + Admin
+                            </span>
+                        </div>
+                        <div class="featured-actions">
+                            <a href="https://gta5universerp.com/" target="_blank" rel="noopener" class="btn btn-primary">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                                <span>Visit Live Site</span>
+                            </a>
+                            <a href="https://discord.gg/js25VBTA6F" target="_blank" rel="noopener" class="btn btn-ghost">
+                                <span>Join Discord</span>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="featured-browser">
+                        <div class="browser-chrome">
+                            <div class="browser-dots">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <div class="browser-url">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                                <span>gta5universerp.com</span>
+                            </div>
+                        </div>
+                        <div class="browser-viewport">
+                            <iframe src="https://gta5universerp.com/" title="Universe Roleplay Preview" loading="lazy" sandbox="allow-scripts allow-same-origin"></iframe>
+                            <div class="browser-overlay">
+                                <a href="https://gta5universerp.com/" target="_blank" rel="noopener" class="browser-visit-btn">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                                    Open Full Site
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience / Timeline -->
+    <section class="section experience" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-index">04</span>
+                <h2 class="section-title reveal-up">My <span class="gold">Journey</span></h2>
+                <div class="section-line reveal-up"></div>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item reveal-up">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2025 - Present</span>
+                        <h3 class="timeline-title">Web Developer & Server Admin</h3>
+                        <p class="timeline-company">Universe Roleplay (gta5universerp.com)</p>
+                        <p class="timeline-desc">Currently building and maintaining the website for Universe Roleplay, a GTA V FiveM gaming community. Also serving as server admin, managing the roleplay server with 500 player capacity.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal-up">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2025</span>
+                        <h3 class="timeline-title">Built Gen Me - AI Style Changer App</h3>
+                        <p class="timeline-company">Android App (Kotlin / Jetpack Compose)</p>
+                        <p class="timeline-desc">Developed and shipped a full Android app with AI-powered cloth changing, hairstyle transformation, beard maker, age changer, and face generator. Published 6 releases on GitHub with 27 commits.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal-up">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2025</span>
+                        <h3 class="timeline-title">Built Point Solver & GameVault</h3>
+                        <p class="timeline-company">Full-Stack Web Applications</p>
+                        <p class="timeline-desc">Created Point Solver, an AI-powered visual problem-solving SaaS deployed on Vercel with auth, payments, and tiered pricing. Also built GameVault, a free game downloads platform with 15+ AAA titles.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal-up">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2024 - Early 2025</span>
+                        <h3 class="timeline-title">Learning & Early Projects</h3>
+                        <p class="timeline-company">Self-Taught Developer</p>
+                        <p class="timeline-desc">Learned web development, JavaScript, React, and Kotlin. Built early projects including Anime Fista (TypeScript), image generation tools, and personal portfolio sites. Established GitHub presence with 7 public repositories.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-index">05</span>
+                <h2 class="section-title reveal-up">Get In <span class="gold">Touch</span></h2>
+                <div class="section-line reveal-up"></div>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info reveal-up">
+                    <h3 class="contact-heading">Let's build something extraordinary together.</h3>
+                    <p class="contact-text">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Whether you need a website, an app, or a complete digital solution - let's talk.</p>
+                    
+                    <div class="contact-methods">
+                        <a href="mailto:amartyapratapsingh0p@gmail.com" class="contact-method">
+                            <div class="method-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+                            </div>
+                            <div>
+                                <span class="method-label">Email</span>
+                                <span class="method-value">amartyapratapsingh0p@gmail.com</span>
+                            </div>
+                        </a>
+                        <a href="https://www.instagram.com/amartya_ruthless/" target="_blank" rel="noopener" class="contact-method">
+                            <div class="method-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><path d="M17.5 6.5h.01"/></svg>
+                            </div>
+                            <div>
+                                <span class="method-label">Instagram</span>
+                                <span class="method-value">@amartya_ruthless</span>
+                            </div>
+                        </a>
+                        <a href="https://github.com/Amartyapratapsingh" target="_blank" rel="noopener" class="contact-method">
+                            <div class="method-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+                            </div>
+                            <div>
+                                <span class="method-label">GitHub</span>
+                                <span class="method-value">@Amartyapratapsingh</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <form class="contact-form reveal-up" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required placeholder=" ">
+                        <label for="name">Your Name</label>
+                        <div class="form-line"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required placeholder=" ">
+                        <label for="email">Your Email</label>
+                        <div class="form-line"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" required placeholder=" ">
+                        <label for="subject">Subject</label>
+                        <div class="form-line"></div>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="4" required placeholder=" "></textarea>
+                        <label for="message">Your Message</label>
+                        <div class="form-line"></div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit">
+                        <span>Send Message</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">Amartya<span class="gold">.</span></span>
+                    <p class="footer-tagline">Crafting digital experiences that matter.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/Amartyapratapsingh" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    </a>
+                    <a href="https://www.instagram.com/amartya_ruthless/" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Amartya Pratap Singh. All rights reserved.</p>
+                <p class="footer-craft">Crafted with precision & passion</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
