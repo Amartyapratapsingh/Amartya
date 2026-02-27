@@ -4,14 +4,29 @@
    ============================================ */
 
 // --- Page Loader ---
-window.addEventListener('load', () => {
+// Use DOMContentLoaded instead of load, because load waits for iframes
+// which may block or take forever on external sites
+function hideLoader() {
     const loader = document.getElementById('loader');
-    setTimeout(() => {
+    if (loader && !loader.classList.contains('hidden')) {
         loader.classList.add('hidden');
         document.body.style.overflow = 'auto';
         animateHeroElements();
-    }, 1800);
-});
+    }
+}
+
+// Hide loader once DOM is ready + small delay for fonts
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', () => {
+        setTimeout(hideLoader, 1800);
+    });
+} else {
+    // DOM already loaded (e.g. script loaded late)
+    setTimeout(hideLoader, 1800);
+}
+
+// Fallback: force-hide loader after 4 seconds no matter what
+setTimeout(hideLoader, 4000);
 
 // --- Custom Cursor ---
 const cursor = document.getElementById('cursor');
@@ -364,6 +379,23 @@ navLinks.forEach(link => {
         this.style.transition = 'color 0.3s ease';
     });
 });
+
+// --- Lazy-load iframes only when visible ---
+const lazyIframes = document.querySelectorAll('iframe[data-src]');
+if (lazyIframes.length > 0) {
+    const iframeObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const iframe = entry.target;
+                iframe.src = iframe.dataset.src;
+                iframe.removeAttribute('data-src');
+                iframeObserver.unobserve(iframe);
+            }
+        });
+    }, { rootMargin: '200px 0px' });
+
+    lazyIframes.forEach(iframe => iframeObserver.observe(iframe));
+}
 
 // --- Preload optimization ---
 document.addEventListener('DOMContentLoaded', () => {
