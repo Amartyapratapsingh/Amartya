@@ -176,6 +176,8 @@ function animateCounters() {
 }
 
 // --- Scroll Reveal ---
+const revealThreshold = window.innerWidth <= 768 ? 0.05 : 0.1;
+const revealMargin = window.innerWidth <= 768 ? '0px 0px -30px 0px' : '0px 0px -60px 0px';
 const revealObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -184,8 +186,8 @@ const revealObserver = new IntersectionObserver((entries) => {
         }
     });
 }, {
-    threshold: 0.1,
-    rootMargin: '0px 0px -60px 0px'
+    threshold: revealThreshold,
+    rootMargin: revealMargin
 });
 
 // Observe all reveal elements except hero ones (handled separately)
@@ -335,20 +337,22 @@ if (heroImage && window.matchMedia('(hover: hover)').matches) {
     });
 }
 
-// --- Magnetic effect on buttons ---
-const magneticBtns = document.querySelectorAll('.btn-primary, .social-link');
-magneticBtns.forEach(btn => {
-    btn.addEventListener('mousemove', (e) => {
-        const rect = btn.getBoundingClientRect();
-        const x = e.clientX - rect.left - rect.width / 2;
-        const y = e.clientY - rect.top - rect.height / 2;
-        btn.style.transform = `translate(${x * 0.15}px, ${y * 0.15}px)`;
-    });
+// --- Magnetic effect on buttons (desktop only) ---
+if (window.matchMedia('(hover: hover)').matches) {
+    const magneticBtns = document.querySelectorAll('.btn-primary, .social-link');
+    magneticBtns.forEach(btn => {
+        btn.addEventListener('mousemove', (e) => {
+            const rect = btn.getBoundingClientRect();
+            const x = e.clientX - rect.left - rect.width / 2;
+            const y = e.clientY - rect.top - rect.height / 2;
+            btn.style.transform = `translate(${x * 0.15}px, ${y * 0.15}px)`;
+        });
 
-    btn.addEventListener('mouseleave', () => {
-        btn.style.transform = '';
+        btn.addEventListener('mouseleave', () => {
+            btn.style.transform = '';
+        });
     });
-});
+}
 
 // --- Navbar links smooth highlight transition ---
 navLinks.forEach(link => {
@@ -357,9 +361,12 @@ navLinks.forEach(link => {
     });
 });
 
-// --- Lazy-load iframes only when visible ---
+// --- Lazy-load iframes only when visible (skip on mobile for performance) ---
+const isMobile = window.matchMedia('(max-width: 768px)').matches;
 const lazyIframes = document.querySelectorAll('iframe[data-src]');
-if (lazyIframes.length > 0) {
+
+if (!isMobile && lazyIframes.length > 0) {
+    // Desktop: load iframes when scrolled into view
     const iframeObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -373,6 +380,7 @@ if (lazyIframes.length > 0) {
 
     lazyIframes.forEach(iframe => iframeObserver.observe(iframe));
 }
+// Mobile: iframes are hidden via CSS, no loading needed — saves bandwidth & CPU
 
 // --- Preload optimization ---
 document.addEventListener('DOMContentLoaded', () => {
